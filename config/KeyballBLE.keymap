@@ -58,10 +58,21 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &mkp LCLK                          &kp BACKSLASH      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &mkp RCLK                          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE      &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W                           &kp E      &kp R                        &kp T                                              &kp Y     &kp U  &lt 6 I    &kp O    &kp P
+&kp A             &kp S                           &kp D      &kp F                        &kp G        &kp ESC            &kp RIGHT_COMMAND  &kp H     &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z             &kp X                           &kp C      &kp V                        &kp B        &mkp LCLK          &kp MINUS          &kp N     &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_CONTROL  &lt_to_layer_0 6 LANG_HIRAGANA  &lt 3 TAB  &lt_to_layer_0 2 LANGUAGE_5  &lt 5 SPACE  &kp LS(SPACE)      &lt 4 ENTER        &kp BSPC                             &kp COLON
+            >;
+
+            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
+        };
+
+        JIS {
+            bindings = <
+&kp Q             &kp L                           &kp U      &kp COMMA                    &kp DOT                                      &kp F     &kp W  &kp R  &kp Y  &kp P
+&kp E             &kp I                           &kp A      &kp O                        &kp FSLH     &kp ESC            &kp LGUI     &kp K     &kp T  &kp N  &kp S  &kp H
+&kp Z             &kp X                           &kp C      &kp V                        &kp SEMI     &mkp LCLK          &kp MINUS    &kp G     &kp D  &kp M  &kp Z  &kp B
+&kp LEFT_CONTROL  &lt_to_layer_0 6 LANG_HIRAGANA  &lt 3 TAB  &lt_to_layer_0 2 LANGUAGE_5  &lt 5 SPACE  &kp LS(SPACE)      &lt 4 ENTER  &kp BSPC                       &kp J
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -105,16 +116,7 @@
             >;
         };
 
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_6 {
+        BT {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans     &trans      &studio_unlock  &trans        &trans        &trans        &trans        &trans
